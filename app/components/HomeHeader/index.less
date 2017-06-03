@@ -1,0 +1,36 @@
+.home-header{
+  height: 48px;
+  display: flex;//在一行显示
+  align-items: center;//垂直居中
+  color: #fff;
+  &:nth-child(1){
+    flex: 2;
+    display: flex; //转换为flex模型
+  }
+  .city{
+    display: flex; //转换为flex模型
+    justify-content: center;
+  }
+  .search{
+    flex:2;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    i{
+      color: #666666;
+      padding: 0 5px;
+    }
+    input{
+      border: none;
+    }
+  }
+  a{
+    display: flex;
+  }
+  .profile{
+    justify-content: center;
+  }
+}

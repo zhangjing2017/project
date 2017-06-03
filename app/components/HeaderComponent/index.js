@@ -1,0 +1,19 @@
+import React,{Component} from 'react';
+import './index.less';
+export default class HeaderComponent extends Component{
+    back(){
+        if(this.props.back){  //手动跳转到想要返回的路径
+           this.props.history.push(this.props.back);
+        }else{
+            this.props.history.go(-1);
+        }
+    }
+    render(){
+        return (
+            <div className="back header-component">
+                <i className="iconfont icon-fanhui" onClick={this.back.bind(this)}></i>
+                <span>{this.props.title}</span>
+            </div>
+        )
+    }
+}

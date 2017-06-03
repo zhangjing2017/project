@@ -1,0 +1,59 @@
+.order-list-item{
+  display: flex;
+  padding: 8px;
+  color: #505050;
+  img,.list-content .order-btn{
+    flex: 1;
+    display: flex;
+  }
+  .list-content{
+    flex-direction: column;
+    margin-left: 10px;
+    h3{
+      font-size: 16px;
+       margin-top: 6px;
+    }
+    span{
+      display: block;
+      margin-top: 5px;
+      font-size: 14px;
+    }
+  }
+  img{
+    width: 120px;
+    height: 90px;
+  }
+  .order-btn{
+    justify-content: center;
+    align-items: center;
+    button{
+      height:30px;
+      width:50px;
+      background: #e9203d;
+      color: #fff;
+      border-radius: 5px;
+      border: 0;
+      margin-top: 35px;
+    }
+    .unselect{
+       background: #c1c0c1;
+    }
+  }
+}
+.comment-area{
+  display: flex;
+  flex-direction: column;
+  button{
+    width: 70px;
+    height: 30px;
+    text-align: center;
+  }
+  textarea{
+    border: 1px #ccc solid;
+    height: 70px;
+  }
+  div{
+    display: flex;
+    flex-direction: row;
+  }
+}
